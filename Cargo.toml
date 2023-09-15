@@ -1,0 +1,22 @@
+[package]
+name = "ccbb"
+version = "0.1.0"
+authors = ["Zakru"]
+edition = "2021"
+description = "A lightweight short-term HTTP data store"
+documentation = "https://github.com/Zakru/ccbb"
+readme = "README.md"
+homepage = "https://github.com/Zakru/ccbb"
+repository = "https://github.com/Zakru/ccbb"
+license = "MIT"
+license-file = "LICENSE"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-cors = "0.6.4"
+actix-web = "4.3.1"
+clap = { version = "4.4.2", features = ["derive"] }
+env_logger = "0.10.0"
+serde = { version = "1.0.188", features = ["derive"] }
+toml = "0.7.8"

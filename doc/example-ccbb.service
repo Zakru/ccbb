@@ -1,0 +1,14 @@
+[Unit]
+Description=CC Bulletin Board
+
+[Service]
+User=ccbb
+Type=exec
+# Assumes system-wide installation in /usr/local/bin with a
+# configuration file at /etc/ccbb.conf
+ExecStart=/usr/local/bin/ccbb -c /etc/ccbb.conf
+# Log HTTP requests
+Environment="RUST_LOG=info"
+
+[Install]
+WantedBy=multi-user.target
